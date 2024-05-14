@@ -90,6 +90,77 @@ body {
     object-fit: fill;
 }
 
+#big {
+    font-size: 50px
+}
+
+#blurbs {
+    display: block;
+    text-align: center;
+    margin: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 25px
+}
+
+.disabled {
+   opacity: 0.6;
+  cursor: not-allowed; 
+}
+
+.icons {
+    display: block;
+    margin: 50px;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    float: left;
+}
+
+#agendacards {
+    background-color: #363636;
+    border-bottom: 5px solid black;
+    border-top: 5px solid black;
+}
+
+.listblurbs {
+    text-align: justify;
+}
+
+#listedblurbs {
+    display: block;
+    text-align: justify;
+    margin: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 25px
+}
+
+a {
+    color: #062f9e;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    transition: 0.2s;
+}
+
+a:hover {
+   color: gray;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    transition: 0.2s; 
+}
 
 
 /* From here forward is for mobile screens*/
@@ -182,13 +253,7 @@ body {
     height: auto;
     object-fit: fill;
 }   
-}
-    
-
-
-
-
-#big {
+    #big {
     font-size: 50px
 }
 
@@ -259,3 +324,10 @@ a:hover {
     font-style: normal;
     transition: 0.2s; 
 }
+}
+    
+
+
+
+
+
