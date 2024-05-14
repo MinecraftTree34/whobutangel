@@ -41,7 +41,11 @@ body {
 
 .titleCard {
     display: block;
+    text-align: center;
     margin: 10px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -73,6 +77,9 @@ body {
 
 #blackover {
     background-color: #363636;
+    border-bottom: 10px solid black;
+    border-top: 10px solid black;
+
 }
 
 #votecardstyles {
@@ -180,3 +187,19 @@ body {
 
 
 
+
+#big {
+    font-size: 50px
+}
+
+#blurbs {
+    display: block;
+    text-align: center;
+    margin: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 25px
+}
