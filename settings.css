@@ -4,10 +4,9 @@ ul { /* UL */
     padding: 0;
     overflow: hidden;
     background-color: #333;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
+    position: fixed;
     top: 0;
-    
+    width: 100%;
   }
 li { /* LI */
     float: left;
@@ -47,13 +46,7 @@ body {
     font-style: normal;
 }
 
-#blackover {
-    background-color: black;
-    opacity: 75%;
-    margin: 0;
-    width: 100%;
-    height 100%;
-}
+
 
 .topCard {
     display: block;
@@ -77,7 +70,17 @@ body {
 }
 
 
+#blackover {
+    background-color: #363636;
+}
 
+#votecardstyles {
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: auto;
+    object-fit: fill;
+}
 
 
 
@@ -102,7 +105,7 @@ body {
     
   }
 li { /* LI */
-    float: left;
+    width: 100%;
     border-right: 1px solid #bbb;
   }
 li a { /* A */
@@ -165,10 +168,21 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-}
-    
+
+
+#blackover {
+    background-color: #363636;
 }
 
-html {
-    background-image: linear-gradient(to bottom right, #000000, #3533CD);
+#votecardstyles {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+}   
 }
+    
+
+
+
