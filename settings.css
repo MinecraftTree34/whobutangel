@@ -277,8 +277,8 @@ body {
 .icons {
     display: block;
     margin: 50px;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     object-fit: contain;
     float: left;
 }
@@ -331,3 +331,10 @@ a:hover {
 
 
 
+
+.Makeover {
+    max-width; 1000px;
+    max-height: 500px;
+    display: block;
+    margin: auto;
+}
