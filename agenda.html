@@ -34,18 +34,25 @@
         </div>
         
         <div class="container">
+            
+            <!-- Agenda Card -->
+            
             <div class="card">
+                
                 <div class="card-image">
-                <img src="agendaIcon.png">
+                    <img src="agendaIcon.png">
                 </div>
+                
                 <div class="content">
-                <h3>My Plans</h3>
-                <p>A detailed list of my ideas for events.</p>
-                <a class="button" class="cardcontent" id="AgendaModalButton">Read More</a>
+                    <h3>My Plans</h3>
+                    <p>A detailed list of my ideas for events.</p>
+                    <a class="button" class="cardcontent" id="AgendaModalButton">Read More</a>
                 </div>
+                
+                <!-- Modal Start -->
                 <div class="modal" id="AgendaModal">
                     <div class="modal-content">
-                    <span class="close">&times;</span>
+                        <span class="close" id="agClose">&times;</span>
                         <p style="width: 100%; font-size: 26px;"><strong>Plans:</strong></p>
                         <p style="width: 100%;"><strong>&#12288</strong></p>
                         <p style="width: 100%; font-size: 20px;"><strong>-Winterfest</strong></p>
@@ -60,53 +67,173 @@
                         <p style="width: 100%; font-size: 20px;"><strong>-Car Show</strong></p>
                         <p style="width: 100%;">Very popular among students. Date <i>TBD,</i> however, start or end of year most likely. <em>This event is NOT guarenteed.</em></p>
                         <p style="width: 100%;"><strong>&#12288</strong></p>
-                        
-
-                    </div>        
+                    </div> 
                 </div>
+                
+                <!-- Modal End -->
+                
+                <!-- Script Start -->
+                
                 <script>
-                /* gets Agenda Modal */
-                var modal = document.getElementById("AgendaModal");
-                /* gets Agenda Modal Button */
-                var btn = document.getElementById("AgendaModalButton");
-                /* gets <span> element that closes the modal */
-                var span = document.getElementsByClassName("close")[0];
-                // when user clicks "Read More", open modal    
-                btn.onclick = function() {
-                    modal.style.display = "block";    
-                }
-                // when user clicks x, close modal
-                span.onclick = function() {
-                    modal.style.display = "none";
-                }
-                // close modal is user clicks/taps out of the modal
-                window.onclick = function(event) {
-                    if (event.target == modal) {
-                        modal.style.display = "none";
-                    }
-                }
+                        /* gets Agenda Modal */
+                        var modal = document.getElementById("AgendaModal");
+                        /* gets Agenda Modal Button */
+                        var btn = document.getElementById("AgendaModalButton");
+                        /* gets <span> element that closes the modal */
+                        var span = document.getElementsByClassName("close")[0];
+                        // when user clicks "Read More", open modal    
+                        btn.onclick = function() {
+                            modal.style.display = "block";    
+                        }
+                        // when user clicks x, close modal
+                        span.onclick = function() {
+                            modal.style.display = "none";
+                        }
+                        // close modal when user clicks/taps outside of the modal
+                        window.onclick = function(event) {
+                            if (event.target == modal) {
+                                modal.style.display = "none";
+                            }
+                        }
                 </script>
-            </div>               
-            <div class="card">
-                <div class="card-image">
-                <img src="icon4.jpg">
-                </div>
-                <div class="content">
-                <h3>Revisions</h3>
-                <p>List of what could be changed.</p>
-                <a href="" class="button" class="cardcontent">Read More</a>
-                </div>
+                
+                <!-- Script End -->
             </div>
+            
+            <!-- Agenda Card End -->
+            
+            <!-- - - - - - - - - - - - - - -->
+            
+            <!-- Revisions Card -->
+            
             <div class="card">
+                
                 <div class="card-image">
-                <img src="eventIcon.png">
+                    <img src="icon4.jpg">
                 </div>
+                
                 <div class="content">
-                <h3>How it's possible</h3>
-                <p>Ways to fundraise for a fun time!</p>
-                <a href="" class="button" class="cardcontent">Read More</a>
+                    <h3>Revisions</h3>
+                    <p>List of what could be changed.</p>
+                    <a class="button" class="cardcontent" id="RevisionsButton">Read More</a>
                 </div>
+                
+                <!-- Modal Start -->
+                 
+                <div class="modal" id="revModal">
+                    <div class="modal-content">
+                        <span class="close" id="revClose">&times;</span>
+                        <p style="width: 100%; font-size: 26px;"><strong>Revisions:</strong></p>
+                        <p style="width: 100%;"><strong>&#12288</strong></p>
+                        <p style="width: 100%; font-size: 20px;"><strong>- Pep Rallies</strong></p>
+                        <p style="width: 100%;"> More hype and better execution, including light shows, smoke, music, competitions! There wasn't much "pep" at our rallies, and I'd like to change that.</p>
+                        <p style="width: 100%;"><strong>&#12288</strong></p>
+                        <p style="width: 100%; font-size: 20px;"><strong>- Student-Participation Events</strong></p>
+                        <p style="width: 100%;"> These events include talent shows, different musical events, and <i>hopefully, </i>gym activities during Lunch and Learn</p>
+                        <p style="width: 100%;"><strong>&#12288</strong></p>
+                        <p style="width: 100%; font-size: 20px;"><strong>- Improved Dance Experience</strong></p>
+                        <p style="width: 100%;"> More hype and better execution, including dancable music, lights and smoke, and overall less chaos possible through more security.</p>
+                        <p style="width: 100%;"><strong>&#12288</strong></p>
+                    </div> 
+                </div>
+                
+                <!-- Modal End -->
+                
+                <!-- - - - - - -->
+                
+                <!-- Script Start -->
+                
+                <script>
+                    // gets Revisions Modal element
+                    var revModal = document.getElementById("revModal");
+                    // gets Revisions Modal button
+                    var revBtn = document.getElementById("RevisionsButton");
+                    // gets Close button
+                    var revClose = document.getElementById("revClose");
+                    // when user clicks READ MORE button, open modal
+                    revBtn.onclick = function () {
+                        revModal.style.display = "block";
+                    }
+                    // when user clicks on close, close the modal
+                    revClose.onclick = function () {
+                        revModal.style.display = "none";
+                    }
+                    // when user taps outside the modal, close the modal
+                    window.onclick = function(event) {
+                        if (event.target == revModal) {
+                            revModal.style.display = "none";
+                        }
+                    }
+                </script>
+                
             </div>
+            
+            <!-- Revisions Card End -->
+            
+           <!-- - - - - - - - - - - - - - - - - - - -->
+            
+            <!-- Possible Card Start -->
+            
+            <div class="card">
+                
+                <div class="card-image">
+                    <img src="eventIcon.png">
+                </div>
+                
+                <div class="content">
+                    <h3>How it's possible</h3>
+                    <p>Ways to fundraise for a fun time!</p>
+                    <a class="button" class="cardcontent" id="posModalBtn">Read More</a>
+                </div>
+                
+                <!-- Modal Start -->
+                <div class="modal" id="posModal">
+                    <div class="modal-content">
+                        <span class="close" id="posClose">&times;</span>
+                        <p style="width: 100%; font-size: 26px;"><strong>How it's possible:</strong></p>
+                        <p style="width: 100%;"><strong>&#12288</strong></p>
+                        <p style="width: 100%; font-size: 20px;"><strong>- Dine & Donates</strong></p>
+                        <p style="width: 100%;"> - - - </p>
+                        <p style="width: 100%;"><strong>&#12288</strong></p>
+                        <p style="width: 100%; font-size: 20px;"><strong>- Sales during Lunch & Learn</strong></p>
+                        <p style="width: 100%;"> - - - </p>
+                        <p style="width: 100%;"><strong>&#12288</strong></p>
+                        <p style="width: 100%; font-size: 26px;"><strong>What will <i>YOUR</i> money go towards?</strong></p>
+                        <p style="width: 100%;">My goal is to make sure that you know what your money is going towards. With the funds collected, we will be able to host the events that everyone desires!</p>
+                        <p style="width: 100%;"><strong>&#12288</strong></p>
+                    </div> 
+                </div>
+                
+                <!-- Modal End -->
+                
+                <!-- - - - - - -->
+                
+                <!-- Script Start -->
+                
+                <script>
+                    // gets Possibility Modal
+                    var posModal = document.getElementById("posModal");
+                    // gets Possibility Modal Button
+                    var posBtn = document.getElementById("posModalBtn");
+                    // gets Possibility Modal Close Button
+                    var posClose = document.getElementById("posClose");
+                    // when user clicks READD MORE button, open the modal
+                    posBtn.onclick = function() {
+                        posModal.style.display = "block";
+                    }
+                    // when user clicks close button, close modal
+                    posClose.onclick = function () {
+                        posModal.style.display = "none";
+                    }
+                    // close modal when user clicks outside the modal
+                    window.onclick = function(event) {
+                        if (event.target == posModal) {
+                            posModal.style.display = "none";
+                        }
+                    }
+                </script>        
+            </div>
+            
         </div>
         
         
