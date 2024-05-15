@@ -36,6 +36,7 @@ li a:hover {
 body {
    margin: 0;
     /*background-image: linear-gradient(to bottom right, #000000, #3533CD);*/
+    background-color: whitesmoke;
     
 }
 
@@ -170,12 +171,6 @@ body {
     font-family: "Raleway", sans-serif;
 }
     
-
-
-
-
-
-
 .Makeover {
     max-width; 1000px;
     max-height: 500px;
@@ -227,7 +222,7 @@ body {
 .content p{
     font-size: 16px;
     margin-bottom: 20px;
-    color #666;
+    color: #666;
 }
 
 .content .button{
@@ -289,14 +284,14 @@ body {
 /* From here forward is for mobile screens*/
 
 @media (max-width: 1000px) {
+
     ul { /* UL */
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
+    position: relative;
     top: 0;
     
   }
@@ -326,6 +321,7 @@ li a:hover {
   }
 body {
    margin: 0;
+   background-color: whitesmoke;
 }
 
 .titleCard {
