@@ -30,7 +30,7 @@
         <div>
             <h1 class="titleCard">My Agenda</h1>
             <p id="blurbs"><strong>I have several plans for this coming year, including a re-do of previous years' events, as well as new and exciting functions!  </strong></p>
-            <p id="blurbs"><strong>What I am making-over:  </strong></p>
+            <p id="blurbs"><strong>Click or Tap to learn more about each topic! </strong></p>
         </div>
         
         <div class="container">
@@ -39,30 +39,61 @@
                 <img src="agendaIcon.png">
                 </div>
                 <div class="content">
-                <h3>Card Title 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                <a href="" class="button" class="cardcontent">Read More</a>
+                <h3>My Plans</h3>
+                <p>A detailed list of my ideas for events.</p>
+                <a class="button" class="cardcontent" id="AgendaModalButton">Read More</a>
                 </div>
-                
-                
-                <div class="modal">
+                <div class="modal" id="AgendaModal">
                     <div class="modal-content">
                     <span class="close">&times;</span>
-                    <p>Some text in the Modal..</p>    
+                        <p style="width: 100%; font-size: 26px;"><strong>Plans:</strong></p>
+                        <p style="width: 100%;"><strong>&#12288</strong></p>
+                        <p style="width: 100%; font-size: 20px;"><strong>-Winterfest</strong></p>
+                        <p style="width: 100%;">Indoor event, local vendors, food, games, and music! Sometime in <i>December.</i></p>
+                        <p style="width: 100%;"><strong>&#12288</strong></p>
+                        <p style="width: 100%; font-size: 20px;"><strong>-Sweethearts Dance</strong></p>
+                        <p style="width: 100%;">If possible, will occur night of <i>Feb. 14th</i>, DJ, effects, LIGHTS OFF, and <em>potentially</em> live music.</p>
+                        <p style="width: 100%;"><strong>&#12288</strong></p>
+                        <p style="width: 100%; font-size: 20px;"><strong>-Community Spring Event</strong></p>
+                        <p style="width: 100%;">Will occur some time in <i>April,</i> includes local vendors, school-sponsored clubs, food, games, and music!</p>
+                        <p style="width: 100%;"><strong>&#12288</strong></p>
+                        <p style="width: 100%; font-size: 20px;"><strong>-Car Show</strong></p>
+                        <p style="width: 100%;">Very popular among students. Date <i>TBD,</i> however, start or end of year most likely. <em>This event is NOT guarenteed.</em></p>
+                        <p style="width: 100%;"><strong>&#12288</strong></p>
+                        
+
                     </div>        
                 </div>
-                
-                
-                
-            </div>
-                
+                <script>
+                /* gets Agenda Modal */
+                var modal = document.getElementById("AgendaModal");
+                /* gets Agenda Modal Button */
+                var btn = document.getElementById("AgendaModalButton");
+                /* gets <span> element that closes the modal */
+                var span = document.getElementsByClassName("close")[0];
+                // when user clicks "Read More", open modal    
+                btn.onclick = function() {
+                    modal.style.display = "block";    
+                }
+                // when user clicks x, close modal
+                span.onclick = function() {
+                    modal.style.display = "none";
+                }
+                // close modal is user clicks/taps out of the modal
+                window.onclick = function(event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
+                </script>
+            </div>               
             <div class="card">
                 <div class="card-image">
-                <img src="journalIcon.png">
+                <img src="icon4.jpg">
                 </div>
                 <div class="content">
-                <h3>Card Title 2</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <h3>Revisions</h3>
+                <p>List of what could be changed.</p>
                 <a href="" class="button" class="cardcontent">Read More</a>
                 </div>
             </div>
@@ -71,8 +102,8 @@
                 <img src="eventIcon.png">
                 </div>
                 <div class="content">
-                <h3>Card Title 3</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <h3>How it's possible</h3>
+                <p>Ways to fundraise for a fun time!</p>
                 <a href="" class="button" class="cardcontent">Read More</a>
                 </div>
             </div>
